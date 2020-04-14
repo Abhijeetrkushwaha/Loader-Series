@@ -1,0 +1,104 @@
+<script type="text/javascript">
+		setTimeout(function(){
+			$('.loader_bg').fadeToggle();
+		},2000);
+	</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>loaderggg</title>
+	<link rel="stylesheet" type="text/css" href="loader.css">
+</head>
+<body>
+
+	<div class="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</body>
+</html> -->
+
+
+/* body
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #240229;
+}
+.loader
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(red,blue,green,orange);
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+.loader span
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(red,blue,green,orange);
+    border-radius: 50%;
+    
+}
+
+
+.loader span:nth-child(1)
+{
+    filter: blur(15px);
+    background: red;
+}
+.loader span:nth-child(2)
+{
+    filter: blur(25px);
+    background: blue;
+}
+.loader span:nth-child(3)
+{
+    filter: blur(35px);
+    background: green;
+}
+.loader span:nth-child(4)
+{
+    filter: blur(35px);
+    background: orange;
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #240229;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+ */

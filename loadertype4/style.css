@@ -1,0 +1,81 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.loaderBg{
+    width: 100%;
+    height: 100vh;
+    background-color: #999;
+    position: relative;
+}
+.loader{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:5px solid #999;
+    border-top: 5px solid rgb(112, 0, 112);
+    border-bottom: 5px solid rgb(112, 0, 112);
+    animation: animate-clock 2s linear infinite;
+}
+.loader1{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:5px solid #999;
+    border-right: 5px solid rgb(128, 0, 128);
+    border-left: 5px solid rgb(128, 0, 128);
+    animation: animate-anti-clock 2s linear infinite;
+}
+.loader2{
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:5px solid #999;
+    border-bottom: 5px solid rgb(153, 0, 153);
+    border-top: 5px solid rgb(153, 0, 153);
+    animation: animate-clock 2s linear infinite;
+}
+.loader3{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:5px solid #999;
+    border-left: 5px solid rgb(170, 0, 170);
+    border-right: 5px solid rgb(170, 0, 170);
+    animation: animate-anti-clock 2s linear infinite;
+}
+@keyframes animate-clock{
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+    50%{
+        transform: rotate(180deg) scale(1);
+    }
+    100%{
+        transform: rotate(360deg) scale(.5);
+    }
+}
+@keyframes animate-anti-clock{
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+    50%{
+        transform: rotate(-180deg) scale(1);
+    }
+    100%{
+        transform: rotate(-360deg) scale(.5);
+    }
+}
